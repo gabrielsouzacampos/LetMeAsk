@@ -10,14 +10,14 @@ import { getRoomsRoute } from './http/routes/get-rooms.ts';
 
 const app = fastify().withTypeProvider<ZodTypeProvider>();
 
-app.get("/health", () => {
-  return "OK";
-});
-
-app.register(fastifyCors, { origin: 'localhost:5173' });
-app.register(getRoomsRoute);
+app.register(fastifyCors, { origin: 'http://localhost:5173' });
 
 app.setSerializerCompiler(serializerCompiler);
 app.setValidatorCompiler(validatorCompiler);
+
+app.get("/health", () => {
+  return "OK";
+});
+app.register(getRoomsRoute);
 
 app.listen({ port: env.PORT });
