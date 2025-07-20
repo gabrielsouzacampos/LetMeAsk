@@ -15,6 +15,20 @@
       "when": 1752256368993,
       "tag": "0001_fearless_leopardon",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1752963685651,
+      "tag": "0002_long_goblin_queen",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1753046533656,
+      "tag": "0003_amazing_lenny_balinger",
+      "breakpoints": true
     }
   ]
 }
